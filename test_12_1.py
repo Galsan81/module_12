@@ -5,10 +5,10 @@ import unittest
 
 class RunnerTest(unittest.TestCase):
     def test_walk(self):
-        first = Runner('Petr')
-        for i in range(10):
+        first = Runner('Petr') #создаем 1-го бегуна в классе Runner
+        for i in range(10): # вызов 10 раз функции (метода) walk
             first.walk()
-        self.assertEqual(first.distance, 50)
+        self.assertEqual(first.distance, 50) # сравнение с 50
 
     def test_run(self):
         second = Runner("Fedor")
